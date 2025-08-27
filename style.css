@@ -1,0 +1,48 @@
+/* This CSS keeps things readable and clean. */
+/* We rely on Bootstrap for most styling; we add small helpers. */
+
+:root{
+  --card-radius: 12px;
+}
+
+/* Show/Hide helper for step gating */
+.hidden{ display: none !important; }
+
+/* Global text readability */
+body{
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Cards: small rounding (Bootstrap gives shadows) */
+.card{
+  border-radius: var(--card-radius);
+}
+
+/* Battle sprites: same size so layout is stable */
+.battle-sprite{
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+
+/* Pokedex image a bit bigger */
+.pokedex-img{
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+}
+
+/* Grid images in previews */
+#playerPokemons img,
+#opponentPokemons img{
+  object-fit: contain;
+}
+
+/* Buttons in narrow columns should fill full width */
+.d-grid .btn{
+  width: 100%;
+}
